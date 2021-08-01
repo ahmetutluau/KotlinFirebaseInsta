@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/recyclerEmailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/recyclerImageView"
+        android:layout_width="246dp"
+        android:layout_height="221dp"
+        android:layout_gravity="center"
+        android:paddingTop="10dp" />
+    <TextView
+        android:id="@+id/recyclerCommentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+</LinearLayout>

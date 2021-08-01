@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity">
+
+    <ImageView
+        android:id="@+id/uploadImageView"
+        android:layout_width="262dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="29dp"
+        android:onClick="imageViewClicked"
+        app:layout_constraintBottom_toTopOf="@+id/uploadCommentText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/selectpicture" />
+
+    <EditText
+        android:id="@+id/uploadCommentText"
+        android:layout_width="245dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="comment"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadImageView" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="115dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="144dp"
+        android:onClick="uploadClicked"
+        android:text="upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadCommentText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
